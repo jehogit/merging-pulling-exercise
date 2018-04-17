@@ -10,8 +10,9 @@
 
 ## Learning Objectives
 
-- Know the difference between fork and clone
-- Make pull requests
+- Clone a repository you would like to contribute
+- Create a new branch
+- Make a pull request
 - Resolve merge conflicts
 
 ## Instructor:
@@ -23,8 +24,7 @@
 
 ## Students: 
 
-- Fork the repo
-- Clone the forked repo to your local hard drive using
+- Clone the instructor's repo to your local hard drive using
 `git clone `
 - Create a new branch to make a change. Call your branch: <color-your_first_name>.
 - Add your name to the list: list your first name underneath your favorite color. If you select "Other", use the following format: Color (Your name).
