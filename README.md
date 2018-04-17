@@ -1,11 +1,31 @@
 # Merging/Pulling Exercise
-Merge conflict, pull request, and how to resolve the conflict
 
-Instructor creates a repository, which is set up such that changes to the master branch have to be approved before being merged.
-<setup instructions>
+## Prerequisites
 
-## Instruct the students to: 
-- Clone the repo.
+- You have a GitHub account and you know your username and password. If you
+  don't have one, create one now.
+- You have Git 2+ installed and configured.
+- You know how to open a terminal and generally work from the command-line.
+- You know enough of vi or vim to edit, move around in, save, and quit files.
+
+## Learning Objectives
+
+- Know the difference between fork and clone
+- Make pull requests
+- Resolve merge conflicts
+
+## Instructor:
+
+- Creates a (public) repository
+- Add an initial README
+- Add an initial rainbow.md file containing color names
+- Share the github repo URL with the students
+
+## Students: 
+
+- Fork the repo
+- Clone the forked repo to your local hard drive using
+`git clone `
 - Create a new branch to make a change. Call your branch: <color-your_first_name>.
 - Add your name to the list: list your first name underneath your favorite color. If you select "Other", use the following format: Color (Your name).
 - Add your changes using `git add`.
