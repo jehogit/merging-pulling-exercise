@@ -1,3 +1,5 @@
+# Colors of 121
+
 ## RED
 
 ## ORANGE
@@ -8,6 +10,6 @@
 
 ## BLUE
 
-## INDIGO
-
 ## VIOLET
+
+## Other
