@@ -31,12 +31,21 @@
 `git clone <<instructor's github repo>>`
 
 - Cd to the new directory you just cloned
-- Create a new branch to make a change. Call your branch: <color-your_first_name>, for example,
+- Create a new branch to make a change. Call your branch: <color-your_first_name-branch>, for example,
 
-`git checkout -b red-firstname`
+`git checkout -b red-firstname-branch`
 
-- Add your name to the list: list your first name underneath your favorite color. If you select "Other", use the following format: Color (Your name).
-- Add your changes using
+(Specifying -b causes a new branch to be created as if git-branch were called and then checked out.)
+
+Let's edit rainbow.md to add you color and name to it.
+
+- Add your name to the list: list your first name underneath your favorite color, for example, under the Red section,
+
+`red-firstname`
+
+(Save and exit--you may now try `git status` to see the rainbow.md was modified but not added.)
+
+- Add your changes to your local git repository using
 
 `git add rainbow.md`
 
