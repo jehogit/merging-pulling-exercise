@@ -65,7 +65,7 @@ Let's edit rainbow.md to add you color and name to it using your favorite text e
 
   (The "added my color and name" part is a commit message. When you commit, you should always give a meaningful message showing what's done and changed.)
 
-### Push your changes to your GitHub repo
+### Push your changes to a GitHub repo
 
 - Now you can push the changes to your GitHub repo (the forked one)
 
