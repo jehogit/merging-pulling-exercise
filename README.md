@@ -134,7 +134,7 @@ You're ready to call a PR (Pull Request)
 | (not possible) | Clone the remote (GitHub) repo to local repo |
 | (possible) | Create/checkout new branches |
 | (possible) | Create/edit files |
-| --- | Stage (Add) the files |
+| --- | Stage (add) the files |
 | --- | Commit the changes to local repo |
 | (add/commit/push all at once) | Push the files to a remote (GitHub) repo |
 | Pull request | (possible) |
