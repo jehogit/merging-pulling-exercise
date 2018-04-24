@@ -28,11 +28,15 @@ When you finish this exercise, you will be able to...
 ## Students: 
 Note: lines starting with [GitHub] should be done through GitHub's web interface.
 
+### Get Ready (fork and clone)
+
 - [GitHub] Fork the instructor's repo to your GitHub account
 
 - Clone the forked repository to your local hard drive:
 
   `git clone <<forked github repo>>`
+
+### Make a change to your local file
 
 - Cd to the new directory you just cloned
 
@@ -60,7 +64,11 @@ Let's edit rainbow.md to add you color and name to it using your favorite text e
 
 (The "added my color and name" part is a commit message. When you commit, you should always give a meaningful message showing what's done and changed.)
 
-- Push your change to the forked repository
+### Push your changes to your GitHub repo
+
+Now you can push the changes to your GitHub repo (the forked one)
+
+`git push`
 
 (Notice that you get a fatal error, for eample:
 
@@ -69,24 +77,52 @@ Let's edit rainbow.md to add you color and name to it using your favorite text e
 > 
 >    git push --set-upstream origin green-jeho
 
-At this point, you basically have two options: 
+The error is self-explanatory; your branch has no upstream branch. At this point, you basically have two options: 
 
-(1) set origin for your branch (red-firstname-branch): 
+(1) set upstream (being origin) for your current branch (being <<color-firstname-branch>>): 
 
 `git push --set-upstream origin <<color-firstname-branch>>`
 
 (2) merge (fast-forward merge) your branch into master branch and push the new change to origin from the master branch:
 
+  - Change branch to master (whose origin is already known)
+
   `git checkout master`
 
+  - Merge <<color-firstname-branch>> into master branch
+  
   `git merge <<color-firstname-branch>>` (After this point, your master branch and <<color-firstname-branch>> will be pointing to the same status; you can delete <<color-firstname-branch>> afterwards if you want as follows.)
 
-  `git branch -d <<color-firstname-branch>>` 
+  - Delete old branch (optional)
   
-  Now, you are ready to push the chages recorded to master branch to your forked GitHub repo:
+  `git branch -d <<color-firstname-branch>>` 
+
+  Finally, you are ready to push the chages recorded to master branch to your forked GitHub repo:
   
   `git push`
   
+### Call a Pull Request into the original repo
+
+You're ready to call a PR (Pull Request)
+
+- [GitHub] Make a pull request to the instructor's repo. (Notice that GitHUb checks the original (instructor's) repo and report whether the changes would conflict or safe.) 
+
+- In the main repo, the instructor merges the new change into master by approving the PR.
+
+- Everyone should now sync their repo via `git pull`. Note that people who selected the same color should/might(?) now get a merge conflict...
+
+- In case there's a conflict, you should resolve the conflict by opening the issue
+
+### Resolve the merge conflict
+  
+- Someone with the same color else can now commit their branch and submit a PR for their change.
+  
+- Repeat the above steps to integrate the new change.
+
+- Two new volunteers with two different colors should now submit their changes.
+
+## A Workflow: GitHub web interface vs Local command line interface
+
 | GitHub Web Interface | Local Command Line Interface |
 | --- | --- |
 | Create a GitHub repo | --- |
@@ -100,22 +136,3 @@ At this point, you basically have two options:
 | Pull request | (possible) |
 | Resolve conflicts | (possible) |
 
-Now you're ready to call a PR (Pull Request)
-
-- [GitHub] Make a pull request to the instructor's repo. (Notice that GitHUb checks the original (instructor's) repo and report whether the changes would conflict or safe.) 
-
-- In the main repo, the instructor merges the new change into master by approving the PR.
-
-- Everyone should now sync their repo via `git pull`. Note that people who selected the same color should/might(?) now get a merge conflict...
-
-- In case there's a conflict, you should resolve the conflict by opening the issue
-
-<how to solve the merge conflict>
-  
-- Someone with the same color else can now commit their branch and submit a PR for their change.
-  
-- Repeat the above steps to integrate the new change.
-
-- Two new volunteers with two different colors should now submit their changes.
-
-[End of Exercise]
