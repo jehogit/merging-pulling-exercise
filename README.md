@@ -24,6 +24,7 @@ When you finish this exercise, you will be able to...
 - Add an initial README.md
 - Add an initial rainbow.md containing color names
 - Share the github repo URL with the students
+- Show pull requests and accept PRs 
 
 ## Students: 
 Note: lines starting with [GitHub] should be done through GitHub's web interface.
@@ -36,15 +37,15 @@ Note: lines starting with [GitHub] should be done through GitHub's web interface
 
   `git clone <<forked github repo>>`
 
-### Make a change to your local file
+### Make a change to your local file (rainbow.md)
 
 - Cd to the new directory you just cloned
 
 - Create a new branch and check out the branch to make a change. Call your branch: <color-your_first_name-branch>, for example:
 
-`git checkout -b red-firstname-branch`
+  `git checkout -b red-firstname-branch`
 
-(Specifying `-b` causes a new branch to be created as if git-branch were called and then checked out.)
+  (Specifying `-b` causes a new branch to be created as if git-branch were called and then checked out.)
 
 Let's edit rainbow.md to add you color and name to it using your favorite text editor.
 
@@ -52,38 +53,38 @@ Let's edit rainbow.md to add you color and name to it using your favorite text e
 
   `red-firstname`
 
-(Save and exit--you may now try `git status` to see the rainbow.md was modified but not added.)
+  (Save and exit--you may now try `git status` to see the rainbow.md was modified but not added.)
 
-- Add your changes to your local git repository:
+- Stage your changes to your local git repository (add):
 
   `git add rainbow.md`
 
-- Commit your change:
+- Save your changes to your local repo (commit):
 
   `git commit -m "added my color and name"`
 
-(The "added my color and name" part is a commit message. When you commit, you should always give a meaningful message showing what's done and changed.)
+  (The "added my color and name" part is a commit message. When you commit, you should always give a meaningful message showing what's done and changed.)
 
 ### Push your changes to your GitHub repo
 
-Now you can push the changes to your GitHub repo (the forked one)
+- Now you can push the changes to your GitHub repo (the forked one)
 
-`git push`
+  `git push`
 
-(Notice that you get a fatal error, for eample:
+  (Notice that you get a fatal error, for eample:
 
-> fatal: The current branch green-jeho has no upstream branch.
-> To push the current branch and set the remote as upstream, use
-> 
->    git push --set-upstream origin green-jeho
+  > fatal: The current branch green-jeho has no upstream branch.
+  > To push the current branch and set the remote as upstream, use
+  > 
+  >    git push --set-upstream origin green-jeho
 
-The error is self-explanatory; your branch has no upstream branch. At this point, you basically have two options: 
+  The error is self-explanatory; your branch has no upstream branch. At this point, you basically have two options: 
 
-(1) set upstream (being origin) for your current branch (being <<color-firstname-branch>>): 
+  (1) set upstream (being origin) for your current branch (being <<color-firstname-branch>>): 
 
-`git push --set-upstream origin <<color-firstname-branch>>`
+  `git push --set-upstream origin <<color-firstname-branch>>`
 
-(2) merge (fast-forward merge) your branch into master branch and push the new change to origin from the master branch:
+  (2) merge (fast-forward merge) your branch into master branch and push the new change to origin from the master branch:
 
   - Change branch to master (whose origin is already known)
 
@@ -95,13 +96,13 @@ The error is self-explanatory; your branch has no upstream branch. At this point
 
   - Delete old branch (optional)
   
-  `git branch -d <<color-firstname-branch>>` 
+    `git branch -d <<color-firstname-branch>>` 
 
   Finally, you are ready to push the chages recorded to master branch to your forked GitHub repo:
   
-  `git push`
+    `git push` (this will upload all the changed files to the gitHub repo pointed as origin)
   
-### Call a Pull Request into the original repo
+### Call a Pull Request into the original instructor's repo
 
 You're ready to call a PR (Pull Request)
 
@@ -109,7 +110,7 @@ You're ready to call a PR (Pull Request)
 
 - In the main repo, the instructor merges the new change into master by approving the PR.
 
-- Everyone should now sync their repo via `git pull`. Note that people who selected the same color should/might(?) now get a merge conflict...
+- Everyone should now sync their repo via `git pull`. Note that people who selected the same color should now see a merge conflict.
 
 - In case there's a conflict, you should resolve the conflict by opening the issue
 
@@ -121,7 +122,7 @@ You're ready to call a PR (Pull Request)
 
 - Two new volunteers with two different colors should now submit their changes.
 
-## A Workflow: GitHub web interface vs Local command line interface
+## A Workflow considering GitHub web interface and local command line interface
 
 | GitHub Web Interface | Local Command Line Interface |
 | --- | --- |
