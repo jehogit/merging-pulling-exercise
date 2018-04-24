@@ -32,7 +32,7 @@ Note: lines starting with [GitHub] should be done through GitHub's web interface
 
 - Clone the forked repository to your local hard drive:
 
-`git clone <<forked github repo>>`
+  `git clone <<forked github repo>>`
 
 - Cd to the new directory you just cloned
 
@@ -46,31 +46,45 @@ Let's edit rainbow.md to add you color and name to it using your favorite text e
 
 - Add your name to the list: list your first name underneath your favorite color, for example, under the Red section,
 
-`red-firstname`
+  `red-firstname`
 
 (Save and exit--you may now try `git status` to see the rainbow.md was modified but not added.)
 
 - Add your changes to your local git repository:
 
-`git add rainbow.md`
+  `git add rainbow.md`
 
 - Commit your change:
 
- `git commit -m "added my color and name"`
+  `git commit -m "added my color and name"`
 
 (The "added my color and name" part is a commit message. When you commit, you should always give a meaningful message showing what's done and changed.)
 
 - Push your change to the forked repository
 
 (Notice that you get a fatal error.)
-`git-rainbow jeho$ git push`
-fatal: The current branch green-jeho has no upstream branch.
-To push the current branch and set the remote as upstream, use
 
-    git push --set-upstream origin green-jeho
+`git-rainbow jeho$ git push`
+> fatal: The current branch green-jeho has no upstream branch.
+> To push the current branch and set the remote as upstream, use
+> 
+>    git push --set-upstream origin green-jeho
 
 (This will push your change to the GitHub's repo under a new branch.)
 
+At this point, you basically have two options: 
+(1) set origin for your branch (red-firstname-branch): `git push --set-upstream origin <<color-firstname-branch>>`
+(2) merge (fast-forward merge) your branch into master branch and push the new change to origin from the master branch:
+
+  `git checkout master`
+
+  `git merge <<color-firstname-branch>>` (After this point, your master branch and <<color-firstname-branch>> will be pointing to the same status; you can delete <<color-firstname-branch>> afterwards if you want.)
+
+  `git branch -d <<color-firstname-branch>>`
+
+========/ LOCAL  /=========
+
+========/ GitHub /========
 Now you're ready to call a PR
 
 - [GitHub] Make a pull request to the instructor's repo. (Notice that GitHUb checks the original (instructor's) repo and report whether the changes would conflict or safe.) 
