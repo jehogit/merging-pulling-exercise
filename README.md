@@ -136,7 +136,7 @@ You're ready to call a PR (Pull Request)
 | (possible) | Create/edit files |
 | --- | Stage (Add) the files |
 | --- | Commit the change (to local) |
-| (can be done all three stages at once) | Push the files to a GitHub repo |
+| (add/commit/push all at once) | Push the files to a GitHub repo |
 | Pull request | (possible) |
 | Resolve conflicts | (possible) |
 
