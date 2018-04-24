@@ -62,25 +62,43 @@ Let's edit rainbow.md to add you color and name to it using your favorite text e
 
 - Push your change to the forked repository
 
-(Notice that you get a fatal error.)
+(Notice that you get a fatal error, for eample:
 
-`git-rainbow jeho$ git push`
 > fatal: The current branch green-jeho has no upstream branch.
 > To push the current branch and set the remote as upstream, use
 > 
 >    git push --set-upstream origin green-jeho
 
-(This will push your change to the GitHub's repo under a new branch.)
-
 At this point, you basically have two options: 
-(1) set origin for your branch (red-firstname-branch): `git push --set-upstream origin <<color-firstname-branch>>`
+
+(1) set origin for your branch (red-firstname-branch): 
+
+`git push --set-upstream origin <<color-firstname-branch>>`
+
 (2) merge (fast-forward merge) your branch into master branch and push the new change to origin from the master branch:
 
   `git checkout master`
 
-  `git merge <<color-firstname-branch>>` (After this point, your master branch and <<color-firstname-branch>> will be pointing to the same status; you can delete <<color-firstname-branch>> afterwards if you want.)
+  `git merge <<color-firstname-branch>>` (After this point, your master branch and <<color-firstname-branch>> will be pointing to the same status; you can delete <<color-firstname-branch>> afterwards if you want as follows.)
 
-  `git branch -d <<color-firstname-branch>>`
+  `git branch -d <<color-firstname-branch>>` 
+  
+  Now, you are ready to push the chages to your forked GitHub repo:
+  
+  `git push`
+  
+| GitHub Web Interface | Local Computer's CLI |
+| --- | --- |
+| Create a GitHub repository | --- |
+| Fork | (possible with hub) |
+| (not possible) | Clone the repository |
+| (possible) | Create new branches |
+| (possible) | Create/edit files |
+| (possible) | Stage (Add) the files |
+| (possible) | Commit the change |
+| (possible) | Push the files to GitHub |
+| 
+
 
 ========/ LOCAL  /=========
 
