@@ -88,7 +88,7 @@ At this point, you basically have two options:
   `git push`
   
 | GitHub Web Interface | Local Command Line Interface |
-| === | === |
+| --- | --- |
 | Create a GitHub repo | --- |
 | Fork a repo | (possible with hub) |
 | (not possible) | Clone the repo to local |
