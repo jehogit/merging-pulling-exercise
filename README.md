@@ -73,7 +73,7 @@ To push the current branch and set the remote as upstream, use
 
 Now you're ready to call a PR
 
-- [GitHub] Make a pull request to the instructor's repo
+- [GitHub] Make a pull request to the instructor's repo. (Notice that GitHUb checks the original (instructor's) repo and report whether the changes would conflict or safe.) 
 
 - In the main repo, the instructor merges the new change into master by approving the PR.
 - Everyone should now sync their repo via `git pull`. Note that people who selected the same color should/might(?) now get a merge conflict...
