@@ -62,7 +62,19 @@ Let's edit rainbow.md to add you color and name to it using your favorite text e
 
 - Push your change to the forked repository
 
-They create a pull request (PR) to merge their change into master.
+(Notice that you get a fatal error.)
+`git-rainbow jeho$ git push`
+fatal: The current branch green-jeho has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin green-jeho
+
+(This will push your change to the GitHub's repo under a new branch.)
+
+Now you're ready to call a PR
+
+- [GitHub] Make a pull request to the instructor's repo
+
 - In the main repo, the instructor merges the new change into master by approving the PR.
 - Everyone should now sync their repo via `git pull`. Note that people who selected the same color should/might(?) now get a merge conflict...
 <how to solve the merge conflict>
