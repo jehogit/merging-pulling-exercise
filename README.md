@@ -106,21 +106,23 @@ Let's edit rainbow.md to add you color and name to it using your favorite text e
 
 You're ready to call a PR (Pull Request)
 
-- [GitHub] Make a pull request to the instructor's repo. (Notice that GitHUb checks the original (instructor's) repo and report whether the changes would conflict or safe.) 
+- [GitHub] Pick a volunteer and let him/her make a pull request to the instructor's repo. (Notice that GitHUb checks the original (instructor's) repo and report whether the changes would conflict or not.) 
 
 - In the main repo, the instructor merges the new change into master by approving the PR.
 
-- Everyone should now sync their repo via `git pull`. Note that people who selected the same color should now see a merge conflict.
+- Everyone should now sync their repo via `git pull`. (Note that people who selected the same color should now see a merge conflict.)
 
-- In case there's a conflict, you should resolve the conflict by opening the issue
+- In case there's a conflict, you should resolve the conflict by opening the issue and change the file.
 
 ### Resolve the merge conflict
   
-- Someone with the same color else can now commit their branch and submit a PR for their change.
+- Pick another volunteer with the same color and s/he can now commit his/her branch and submit a PR.
+
+- Let the second person (with the same color) resolve the conflict.
   
 - Repeat the above steps to integrate the new change.
 
-- Two new volunteers with two different colors should now submit their changes.
+- Two new volunteers with two different colors should now submit their changes and experience merge conflict.
 
 ## A Workflow considering GitHub web interface and local command line interface
 
