@@ -83,33 +83,39 @@ At this point, you basically have two options:
 
   `git branch -d <<color-firstname-branch>>` 
   
-  Now, you are ready to push the chages to your forked GitHub repo:
+  Now, you are ready to push the chages recorded to master branch to your forked GitHub repo:
   
   `git push`
   
-| GitHub Web Interface | Local Computer's CLI |
-| --- | --- |
-| Create a GitHub repository | --- |
-| Fork | (possible with hub) |
-| (not possible) | Clone the repository |
-| (possible) | Create new branches |
+| GitHub Web Interface | Local Command Line Interface |
+| === | === |
+| Create a GitHub repo | --- |
+| Fork a repo | (possible with hub) |
+| (not possible) | Clone the repo to local |
+| (possible) | Create/checkout new branches |
 | (possible) | Create/edit files |
-| (possible) | Stage (Add) the files |
-| (possible) | Commit the change |
-| (possible) | Push the files to GitHub |
-| 
+| --- | Stage (Add) the files |
+| --- | Commit the change (to local) |
+| --- | Push the files to a GitHub repo |
+| Pull request | (possible) |
+| Resolve conflicts | (possible) |
 
-
-========/ LOCAL  /=========
-
-========/ GitHub /========
-Now you're ready to call a PR
+Now you're ready to call a PR (Pull Request)
 
 - [GitHub] Make a pull request to the instructor's repo. (Notice that GitHUb checks the original (instructor's) repo and report whether the changes would conflict or safe.) 
 
 - In the main repo, the instructor merges the new change into master by approving the PR.
+
 - Everyone should now sync their repo via `git pull`. Note that people who selected the same color should/might(?) now get a merge conflict...
+
+- In case there's a conflict, you should resolve the conflict by opening the issue
+
 <how to solve the merge conflict>
+  
 - Someone with the same color else can now commit their branch and submit a PR for their change.
+  
 - Repeat the above steps to integrate the new change.
+
 - Two new volunteers with two different colors should now submit their changes.
+
+[End of Exercise]
