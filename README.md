@@ -127,7 +127,7 @@ You're ready to call a PR (Pull Request)
 
 ## A Workflow considering GitHub web interface and local command line interface
 
-| GitHub Web Interface | Local Command Line Interface |
+| Remote (GitHub) Web Interface | Local Command Line Interface |
 | --- | --- |
 | Create a GitHub repo | --- |
 | Fork a repo | (possible with hub) |
@@ -135,8 +135,8 @@ You're ready to call a PR (Pull Request)
 | (possible) | Create/checkout new branches |
 | (possible) | Create/edit files |
 | --- | Stage (Add) the files |
-| --- | Commit the change (to local) |
-| (add/commit/push all at once) | Push the files to a GitHub repo |
+| --- | Commit the changes to local repo |
+| (add/commit/push all at once) | Push the files to a remote (GitHub) repo |
 | Pull request | (possible) |
 | Resolve conflicts | (possible) |
 
