@@ -53,7 +53,7 @@ Let's edit rainbow.md to add you color and name to it using your favorite text e
 
   `red-firstname`
 
-  (Save and exit--you may now try `git status` to see the rainbow.md was modified but not added.)
+- Save and exit. You may now try `git status` to see the rainbow.md was modified but not added.
 
 - Stage your changes to your local git repository (add):
 
@@ -80,33 +80,34 @@ Let's edit rainbow.md to add you color and name to it using your favorite text e
 
   The error is self-explanatory; your branch has no upstream branch. At this point, you basically have two options: 
 
-  (1) set upstream (being origin) for your current branch (being <<color-firstname-branch>>): 
+  (1) set upstream (i.e., origin) for your current branch (i.e., `<<color-firstname-branch>>`): 
 
-  `git push --set-upstream origin <<color-firstname-branch>>`
+    `git push --set-upstream origin <<color-firstname-branch>>`
 
   (2) merge (fast-forward merge) your branch into master branch and push the new change to origin from the master branch:
 
   - Change branch to master (whose origin is already known)
 
-  `git checkout master`
+    `git checkout master`
 
-  - Merge <<color-firstname-branch>> into master branch
+  - Merge `<<color-firstname-branch>>` into master branch
   
-  `git merge <<color-firstname-branch>>` (After this point, your master branch and <<color-firstname-branch>> will be pointing to the same status; you can delete <<color-firstname-branch>> afterwards if you want as follows.)
+    `git merge <<color-firstname-branch>>` (After this point, your master branch and <<color-firstname-branch>> will be pointing to the same status; you can delete <<color-firstname-branch>> afterwards if you want as follows.)
 
   - Delete old branch (optional)
   
     `git branch -d <<color-firstname-branch>>` 
 
-  Finally, you are ready to push the chages recorded to master branch to your forked GitHub repo:
+  - Finally, you are ready to push the chages recorded in master branch to your (forked) GitHub repo:
   
-    `git push` (this will upload all the changed files to the gitHub repo pointed as origin)
+    `git push` (this will upload all the new/updated files to the gitHub repo pointed as origin)
   
 ### Call a Pull Request into the original instructor's repo
 
 You're ready to call a PR (Pull Request)
 
-- [GitHub] Pick a volunteer and let him/her make a pull request to the instructor's repo. (Notice that GitHUb checks the original (instructor's) repo and report whether the changes would conflict or not.) 
+- [GitHub] Pick a volunteer and let him/her make a pull request to the instructor's repo. 
+  (Notice that GitHUb checks the original (instructor's) repo and report whether the changes conflict or not.) 
 
 - In the main repo, the instructor merges the new change into master by approving the PR.
 
@@ -122,7 +123,7 @@ You're ready to call a PR (Pull Request)
   
 - Repeat the above steps to integrate the new change.
 
-- Two new volunteers with two different colors should now submit their changes and experience merge conflict.
+- Other volunteers with different colors should now submit their changes, call pull requests, and experience merge conflicts.
 
 ## A Workflow considering GitHub web interface and local command line interface
 
@@ -130,7 +131,7 @@ You're ready to call a PR (Pull Request)
 | --- | --- |
 | Create a GitHub repo | --- |
 | Fork a repo | (possible with hub) |
-| (not possible) | Clone the repo to local |
+| (not possible) | Clone the remote (GitHub) repo to local repo |
 | (possible) | Create/checkout new branches |
 | (possible) | Create/edit files |
 | --- | Stage (Add) the files |
