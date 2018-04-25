@@ -1,7 +1,7 @@
 # Colors of 121
 
 ## RED
-@jehopark+@jeho
+@jeho
 
 ## ORANGE
 
