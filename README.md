@@ -96,7 +96,7 @@ Let's edit `rainbow.md` to add you color and name to it using your favorite text
 
   - Merge `<<color-firstname-branch>>` into master branch
   
-    `git merge <<color-firstname-branch>>` (After this point, your master branch and <<color-firstname-branch>> will be pointing to the same status; you can delete <<color-firstname-branch>> afterwards if you want as follows.)
+    `git merge <<color-firstname-branch>>` (After this point, your master branch and `<<color-firstname-branch>>` will be pointing to the same status; you can delete `<<color-firstname-branch>>` afterwards if you want as follows.)
 
   - Delete old branch (optional)
   
