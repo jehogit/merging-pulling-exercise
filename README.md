@@ -31,29 +31,33 @@ Note: lines starting with [GitHub] should be done through GitHub's web interface
 
 ### Get Ready (fork and clone)
 
-- [GitHub] Fork the instructor's repo to your GitHub account
+- [GitHub] Fork the instructor's repo (`<ORIGINAL_REPOSITORY_URL>`) to your GitHub account
+
+- [GitHub] Navigate to _your_ fork of the project. Use "Clone or download" to reveal _your_ fork's repository URL. This is the <FORKED_REPOSITORY_URL>.
 
 - Clone the forked repository to your local hard drive:
 
-  `git clone <<forked github repo>>`
+  `git clone <FORKED_REPOSITORY_URL>  <LOCAL_REPOSITORY_DIRECTORY>`
 
 ### Make a change to your local file (rainbow.md)
 
-- Cd to the new directory you just cloned
+- `cd` to the new directory you just cloned
 
-- Create a new branch and check out the branch to make a change. Call your branch: <color-your_first_name-branch>, for example:
+  `cd <LOCAL_REPOSITORY_DIRECTORY>`
+
+- Create a new branch and check out the branch to make a change. Call your branch: `<color-your_first_name-branch>`, for example:
 
   `git checkout -b red-firstname-branch`
 
   (Specifying `-b` causes a new branch to be created as if git-branch were called and then checked out.)
 
-Let's edit rainbow.md to add you color and name to it using your favorite text editor.
+Let's edit `rainbow.md` to add you color and name to it using your favorite text editor.
 
 - Add your name to the list: list your first name underneath your favorite color, for example, under the Red section,
 
   `red-firstname`
 
-- Save and exit. You may now try `git status` to see the rainbow.md was modified but not added.
+- Save and exit. You may now try `git status` to see the `rainbow.md` was modified but not added.
 
 - Stage your changes to your local git repository (add):
 
@@ -71,7 +75,7 @@ Let's edit rainbow.md to add you color and name to it using your favorite text e
 
   `git push`
 
-  (Notice that you get a fatal error, for eample:
+  (Notice that you get a fatal error, for example:
 
   > fatal: The current branch green-jeho has no upstream branch.
   > To push the current branch and set the remote as upstream, use
@@ -102,12 +106,12 @@ Let's edit rainbow.md to add you color and name to it using your favorite text e
   
     `git push` (this will upload all the new/updated files to the gitHub repo pointed as origin)
   
-### Call a Pull Request into the original instructor's repo
+### Create a Pull Request into the original instructor's repo
 
-You're ready to call a PR (Pull Request)
+You're ready to create a PR (Pull Request)
 
 - [GitHub] Pick a volunteer and let him/her make a pull request to the instructor's repo. 
-  (Notice that GitHUb checks the original (instructor's) repo and report whether the changes conflict or not.) 
+  (Notice that GitHub checks the original (instructor's) repo and reports whether the changes conflict or not.) 
 
 - In the main repo, the instructor merges the new change into master by approving the PR.
 
@@ -117,7 +121,7 @@ You're ready to call a PR (Pull Request)
 
 ### Resolve the merge conflict
   
-- Pick another volunteer with the same color and s/he can now commit his/her branch and submit a PR.
+- Pick another volunteer with the same color and they can now commit their branch and submit a PR.
 
 - Let the second person (with the same color) resolve the conflict.
   
